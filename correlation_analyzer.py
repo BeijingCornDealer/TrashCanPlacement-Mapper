@@ -10,9 +10,9 @@ trash_data = np.loadtxt('trash_collection_matrix.txt')
 path_flat = path_data.flatten()
 trash_flat = trash_data.flatten()
 
-# Calculate Pearson correlation
-corr, _ = pearsonr(path_flat, trash_flat)
-print(f"Pearson correlation coefficient: {corr:.3f}")
+# # Calculate Pearson correlation
+# corr, _ = pearsonr(path_flat, trash_flat)
+# print(f"Pearson correlation coefficient: {corr:.3f}")
 
 # Create figure with 2 subplots
 fig = plt.figure(figsize=(16, 8))
@@ -34,7 +34,7 @@ ax2.set_title('Correlation Heatmap (Product of Normalized Values)')
 plt.colorbar(im2, ax=ax2, label='Product (0-1 scale)\n0=No correlation\n1=Perfect correlation')
 
 # Print correlation coefficient
-print(f"Pearson correlation between path coverage and trash collection: {corr:.3f}")
+# print(f"Pearson correlation between path coverage and trash collection: {corr:.3f}")
 
 plt.tight_layout()
 

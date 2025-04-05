@@ -1,0 +1,44 @@
+Key Limitations of the Trash Can Placement Simulation:
+
+1. Agent Behavior Simplifications:
+- Agents use basic A* pathfinding without considering:
+  * Dynamic obstacles
+  * Crowd behavior/avoidance
+  * Personal preferences
+  * Real-world navigation challenges
+
+2. Environmental Factors Missing:
+- No terrain difficulty (all empty spaces equal)
+- No weather/time-of-day effects
+- No maintenance/accessibility considerations
+- Walls DO block visibility (using line-of-sight checks)
+- But other obstructions like furniture/vegetation not modeled
+
+3. Static Garbage Can Placement:
+- Cans don't move or change capacity
+- No consideration of can maintenance/emptying
+- Fixed locations throughout all simulation runs
+
+4. Simplified Success Conditions:
+- Binary success/failure (littered or not)
+- No partial disposal attempts
+- No varying garbage amounts
+- No consideration of can fullness
+
+5. Spatial/Temporal Limitations:
+- 2D grid doesn't capture 3D reality
+- No time-varying patterns (e.g. rush hours)
+- Fixed map layout throughout simulation
+
+6. Social Factors Missing:
+- No peer influence effects
+- No signage/education impact
+- No enforcement presence
+- No cultural/behavioral differences
+
+Recommendations for Future Improvements:
+- Add dynamic can properties (capacity, visibility)
+- Incorporate more realistic agent decision-making
+- Include time-varying patterns
+- Add environmental effects
+- Consider 3D navigation aspects
